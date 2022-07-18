@@ -18,7 +18,7 @@ export default function Counter() {
                 The current counter value is {count}
             </div>
             <button className="btn btn-primary" onClick={increaseCounter}>Increase Count</button>
-            <button className="btn btn-danger" onClick={decrementCounter}>Decremenet Count</button>
+            <button className="btn btn-danger mx-2" onClick={decrementCounter}>Decremenet Count</button>
             <button className="btn btn-success" onClick={resetCounter}>Reset Count</button>
         </div>
     )

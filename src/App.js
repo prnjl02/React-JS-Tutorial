@@ -6,9 +6,9 @@ import Counter from './components/Counter';
 
 function App() {
   return (
-    <div className="App">
-      <div className="name">App</div>
-     <Home name="Pranjal Verma" course="ReactJs" timeline={3}/>
+    <div className="App container mt-5">
+      {/* <div className="name">App</div> */}
+     <Home name="Pranjal Verma" course="ReactJs" timeline={4}/>
      <Counter/>
     </div>
   );

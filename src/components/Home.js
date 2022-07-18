@@ -8,7 +8,7 @@ export default function Home(props) {
         <h1 className='name'>Hello {props.name}</h1>
         <h5 className='course'>Welcome to {props.course} course</h5>
         <h5 className='timeline'>Timeline to finish {props.course} course is {props.timeline} days</h5>
-        <button className='btn btn-primary'>Click Me</button>
+        <button className='btn btn-primary mt-2'>Click Me</button>
       </div>
     </>
   )

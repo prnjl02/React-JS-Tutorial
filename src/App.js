@@ -2,8 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Link
+  Routes
 } from "react-router-dom";
 import './App.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';

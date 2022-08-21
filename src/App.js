@@ -10,6 +10,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import Navbar from './components/Navbar';
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -20,13 +21,18 @@ function App() {
     //     <Counter />
     //   </div>
     // </>
+   
 <Router>
 <Navbar />
+
     <Routes>
       <Route path="/counter" element = {<Counter />}>
       </Route>
-      <Route path="/" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}>
-     
+      <Route path="/home" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}>
+
+      </Route>
+      {/* <Route path="/" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}> */}
+      <Route path="/" element = { <Login />}>
       </Route>
     </Routes>
     </Router>

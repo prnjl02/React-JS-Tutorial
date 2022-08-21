@@ -15,7 +15,8 @@ export default function Counter() {
     return (
         <div className='counter container my-5 py-5'>
             <div className='name'>
-                The current counter value is {count}
+                The current counter value is 
+                <div className='mt-5 mb-5'>{count}</div>
             </div>
             <button className="btn btn-primary" onClick={increaseCounter}>Increase Count</button>
             <button className="btn btn-danger mx-2" onClick={decrementCounter}>Decremenet Count</button>

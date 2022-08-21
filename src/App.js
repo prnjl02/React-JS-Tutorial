@@ -20,20 +20,20 @@ function App() {
     //     <Counter />
     //   </div>
     // </>
-   
-<Router>
-<Navbar />
 
-    <Routes>
-      <Route path="/counter" element = {<Counter />}>
-      </Route>
-      <Route path="/home" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}>
+    <Router>
+      <Navbar />
 
-      </Route>
-      {/* <Route path="/" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}> */}
-      <Route path="/" element = { <Login />}>
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path="/counter" element={<Counter />}>
+        </Route>
+        <Route path="/home" element={<Home name="Pranjal Verma" course="ReactJs" timeline={2} />}>
+
+        </Route>
+        {/* <Route path="/" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}> */}
+        <Route path="/" element={<Login />}>
+        </Route>
+      </Routes>
     </Router>
   );
 }

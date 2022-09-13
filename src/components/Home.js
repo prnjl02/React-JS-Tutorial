@@ -1,9 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import UseStateWithObj from '../Hooks/UseStateWithObj';
+
 
 export default function Home(props) {
   return (
     <>
+     <UseStateWithObj/>
       <div className="Home">
         <h1 className='name'>Hello {props.name}</h1>
         <h5 className='course'>Welcome to {props.course} course</h5>

@@ -10,7 +10,10 @@ import Home from './components/Home';
 import Counter from './components/Counter';
 import Navbar from './components/Navbar';
 import Login from "./components/Login";
+import FetchData from './Hooks/FetchData';
 
+export const userContext = React.createContext();
+export const crseContext = React.createContext();
 function App() {
   return (
     // <>
@@ -23,7 +26,12 @@ function App() {
 
     <Router>
       <Navbar />
+      <userContext.Provider value={'Pranjal'}>
+        <crseContext.Provider value={'react'}>
+          <FetchData />
+        </crseContext.Provider>
 
+      </userContext.Provider>
       <Routes>
         <Route path="/counter" element={<Counter />}>
         </Route>

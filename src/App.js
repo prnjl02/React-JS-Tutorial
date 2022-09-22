@@ -11,6 +11,9 @@ import Counter from './components/Counter';
 import Navbar from './components/Navbar';
 import Login from "./components/Login";
 import FetchData from './Hooks/FetchData';
+import UseReducer from "./Hooks/useReducer";
+import A from './components/HIgher Order Components/A'
+import B from './components/HIgher Order Components/B'
 
 export const userContext = React.createContext();
 export const crseContext = React.createContext();
@@ -24,25 +27,31 @@ function App() {
     //   </div>
     // </>
 
-    <Router>
-      <Navbar />
-      <userContext.Provider value={'Pranjal'}>
-        <crseContext.Provider value={'react'}>
-          <FetchData />
-        </crseContext.Provider>
+    // <Router>
+    //   <Navbar />
+    //   <UseReducer/>
+    //   <userContext.Provider value={'Pranjal'}>
+    //     <crseContext.Provider value={'react'}>
+    //       <FetchData />
+    //     </crseContext.Provider>
 
-      </userContext.Provider>
-      <Routes>
-        <Route path="/counter" element={<Counter />}>
-        </Route>
-        <Route path="/home" element={<Home name="Pranjal Verma" course="ReactJs" timeline={2} />}>
+    //   </userContext.Provider>
+    //   <Routes>
+    //     <Route path="/counter" element={<Counter />}>
+    //     </Route>
+    //     <Route path="/home" element={<Home name="Pranjal Verma" course="ReactJs" timeline={2} />}>
 
-        </Route>
-        {/* <Route path="/" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}> */}
-        <Route path="/" element={<Login />}>
-        </Route>
-      </Routes>
-    </Router>
+    //     </Route>
+    //     {/* <Route path="/" element = { <Home name="Pranjal Verma" course="ReactJs" timeline={2} />}> */}
+    //     <Route path="/" element={<Login />}>
+    //     </Route>
+    //   </Routes>
+    // </Router>
+<>
+    <A name ="A comp"/>
+    <B name = "B Comp"/>
+    <UseReducer/>
+    </>
   );
 }
 
